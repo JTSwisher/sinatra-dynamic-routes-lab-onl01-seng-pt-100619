@@ -15,6 +15,7 @@ class App < Sinatra::Base
     "#{@squared_number}"
   end 
   
+  #Create a dynamic route at get '/say/:number/:phrase' that accepts a number and a phrase and returns that phrase in a #single string the number of times given.
   
   get '/say/:number/:phrase' do 
     string = ''
@@ -24,6 +25,7 @@ class App < Sinatra::Base
     string
   end 
 
+#
 
 
 
