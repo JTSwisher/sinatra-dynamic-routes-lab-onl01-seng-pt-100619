@@ -37,7 +37,7 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do 
     string = ''
     value = params[:number1].to_i params[:operation] params[:number2].to_i
-    string << value
+    string << value.to_s
     string
   end 
   
