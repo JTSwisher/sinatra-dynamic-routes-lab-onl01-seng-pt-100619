@@ -25,8 +25,11 @@ class App < Sinatra::Base
     string
   end 
 
-#
+#Create a dynamic route at get '/say/:word1/:word2/:word3/:word4/:word5' that accepts five words and returns a string #containing all five words 
 
+  get '/say/:word1/:word2/:word3/:word4/:word5' do 
+    
+  end 
 
 
 
