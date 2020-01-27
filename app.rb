@@ -8,11 +8,13 @@ class App < Sinatra::Base
     @user_name = params[:name] 
     "#{@user_name.reverse}"
   end 
-  
+
+#Create a dynamic route at get '/square/:number' that accepts a number and returns the square of that number.  
   get '/square/:number' do 
     @squared_number = params[:number].to_i ** 2
     "#{@squared_number}"
   end 
+  
   
   get '/say/:number/:phrase' do 
     string = ''
